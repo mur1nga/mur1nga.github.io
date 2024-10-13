@@ -5,79 +5,114 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AnaesWise - The Ultimate Anaesthesia Resource</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+    </style>
 </head>
 
-<body>
+<body class="bg-gray-50 text-gray-800">
+
     <!-- Header Section -->
-    <header class="header">
-        <div class="container">
-            <h1>AnaesWise</h1>
-            <p>Your Ultimate Anaesthesia Resource</p>
+    <header class="bg-blue-900 text-white py-12">
+        <div class="container mx-auto text-center">
+            <h1 class="text-4xl font-bold">AnaesWise</h1>
+            <p class="mt-2 text-lg">Your Ultimate Anaesthesia Resource</p>
         </div>
     </header>
 
     <!-- Main Content -->
-    <main>
+    <main class="container mx-auto px-6 py-12">
         <!-- New Features Section -->
-        <section id="features" class="features">
-            <div class="container">
-                <h2>New Features in AnaesWise!</h2>
-                <ul>
-                    <li>Cases of the Week & Quizzes (Free)</li>
-                    <li>Offline Access for saved content</li>
-                    <li>Paediatric Weight-based Calculator</li>
-                    <li>TIVA/TCI Table</li>
-                    <li>Surgical Risk Calculator</li>
-                </ul>
+        <section id="features" class="mb-12">
+            <h2 class="text-3xl font-semibold text-center text-blue-900 mb-8">New Features in AnaesWise</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-6 shadow-md rounded-lg">
+                    <h3 class="text-xl font-bold mb-2">Cases of the Week & Quizzes</h3>
+                    <p class="text-gray-700">Access 20 current “Cases of the Week” and 10 quizzes from WFSA Anaesthesia Tutorial of the Week.</p>
+                </div>
+                <div class="bg-white p-6 shadow-md rounded-lg">
+                    <h3 class="text-xl font-bold mb-2">Offline Access</h3>
+                    <p class="text-gray-700">Download and save cases and quizzes for offline use, making critical information accessible anytime.</p>
+                </div>
+                <div class="bg-white p-6 shadow-md rounded-lg">
+                    <h3 class="text-xl font-bold mb-2">Paediatric Calculator</h3>
+                    <p class="text-gray-700">Weight-based dosage calculator tailored for paediatric patients.</p>
+                </div>
+                <div class="bg-white p-6 shadow-md rounded-lg">
+                    <h3 class="text-xl font-bold mb-2">TIVA/TCI Table</h3>
+                    <p class="text-gray-700">Quick reference for Total Intravenous Anaesthesia and Target-Controlled Infusion dosages.</p>
+                </div>
+                <div class="bg-white p-6 shadow-md rounded-lg">
+                    <h3 class="text-xl font-bold mb-2">Surgical Risk Calculator</h3>
+                    <p class="text-gray-700">Integrated ACS NSQIP risk calculator to assess surgical risks.</p>
+                </div>
             </div>
         </section>
 
         <!-- Coming Soon Section -->
-        <section id="coming-soon" class="coming-soon">
-            <div class="container">
-                <h2>Exciting Features Coming Soon!</h2>
-                <ul>
-                    <li>Save & Bookmark Quizzes and Cases</li>
-                    <li>Note-Taking</li>
-                    <li>AI-Assisted Quizzes & Self-Testing</li>
-                    <li>Additional Features</li>
-                </ul>
+        <section id="coming-soon" class="mb-12">
+            <h2 class="text-3xl font-semibold text-center text-blue-900 mb-8">Exciting Features Coming Soon</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-6 shadow-md rounded-lg">
+                    <h3 class="text-xl font-bold mb-2">Save & Bookmark</h3>
+                    <p class="text-gray-700">Easily save and bookmark quizzes and cases for quick access later.</p>
+                </div>
+                <div class="bg-white p-6 shadow-md rounded-lg">
+                    <h3 class="text-xl font-bold mb-2">Note-Taking</h3>
+                    <p class="text-gray-700">Annotate specific case PDFs with notes, allowing you to revisit important information.</p>
+                </div>
+                <div class="bg-white p-6 shadow-md rounded-lg">
+                    <h3 class="text-xl font-bold mb-2">AI-Assisted Quizzes</h3>
+                    <p class="text-gray-700">In the future, AI will assist in quizzes and self-testing features.</p>
+                </div>
+                <div class="bg-white p-6 shadow-md rounded-lg">
+                    <h3 class="text-xl font-bold mb-2">Additional Features</h3>
+                    <p class="text-gray-700">More updates, including customization options for educational materials and tools.</p>
+                </div>
             </div>
         </section>
 
         <!-- Why AnaesWise Section -->
-        <section id="why-anaeswise" class="why-anaeswise">
-            <div class="container">
-                <h2>Why AnaesWise?</h2>
-                <ul>
-                    <li>Educational & Practical</li>
-                    <li>Efficiency</li>
-                    <li>Comprehensive</li>
-                </ul>
+        <section id="why-anaeswise" class="mb-12">
+            <h2 class="text-3xl font-semibold text-center text-blue-900 mb-8">Why AnaesWise?</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-6 shadow-md rounded-lg">
+                    <h3 class="text-xl font-bold mb-2">Educational & Practical</h3>
+                    <p class="text-gray-700">Elevate your anaesthesia knowledge and apply it effectively in real-time situations.</p>
+                </div>
+                <div class="bg-white p-6 shadow-md rounded-lg">
+                    <h3 class="text-xl font-bold mb-2">Efficiency</h3>
+                    <p class="text-gray-700">Quick access to essential information, boosting your productivity and improving patient outcomes.</p>
+                </div>
+                <div class="bg-white p-6 shadow-md rounded-lg">
+                    <h3 class="text-xl font-bold mb-2">Comprehensive</h3>
+                    <p class="text-gray-700">A one-stop resource for anaesthetic knowledge, tools, and more.</p>
+                </div>
             </div>
         </section>
 
         <!-- Feedback & Support Section -->
-        <section id="support" class="support">
-            <div class="container">
-                <h2>Feedback & Support</h2>
-                <p>If you have any issues, suggestions, or feedback, don’t hesitate to contact us at:</p>
-                <ul>
-                    <li>Email: <a href="mailto:jjmuringa@pm.me">jjmuringa@pm.me</a></li>
-                    <li>Phone: 0730814805</li>
-                </ul>
-            </div>
+        <section id="support" class="mb-12">
+            <h2 class="text-3xl font-semibold text-center text-blue-900 mb-8">Feedback & Support</h2>
+            <p class="text-center text-gray-700 mb-6">If you have any issues, suggestions, or feedback, don’t hesitate to contact us:</p>
+            <ul class="text-center space-y-2">
+                <li><a href="mailto:jjmuringa@pm.me" class="text-blue-600 hover:text-blue-800">Email: jjmuringa@pm.me</a></li>
+                <li class="text-gray-600">Phone: 0730814805</li>
+            </ul>
         </section>
     </main>
 
     <!-- Footer Section -->
-    <footer>
-        <div class="container">
+    <footer class="bg-blue-900 text-white py-6">
+        <div class="container mx-auto text-center">
             <p>&copy; 2023 AnaesWise. All rights reserved.</p>
-            <nav>
-                <a href="privacy-policy.html">Privacy Policy</a> |
-                <a href="#support">Support</a>
+            <nav class="mt-4">
+                <a href="privacy-policy.html" class="text-white hover:underline">Privacy Policy</a> |
+                <a href="#support" class="text-white hover:underline">Support</a>
             </nav>
         </div>
     </footer>
